@@ -1,0 +1,52 @@
+import {
+  Box,
+  Brain,
+  Cloud,
+  Cpu,
+  Database,
+  FileCode,
+  GitBranch,
+  Globe,
+  Layers,
+  LayoutTemplate,
+  Link2,
+  Monitor,
+  Palette,
+  Plug,
+  Search,
+  Send,
+  Server,
+  Sparkles,
+  Workflow,
+  Wrench,
+  Zap,
+  type LucideIcon,
+} from 'lucide-react'
+
+const iconMap: Record<string, LucideIcon> = {
+  Monitor,
+  Server,
+  Database,
+  Brain,
+  Cloud,
+  Wrench,
+  Zap,
+  Sparkles,
+  GitBranch,
+  Box,
+  Globe,
+  Cpu,
+  Send,
+  Link2,
+  Layers,
+  Search,
+  Palette,
+  FileCode,
+  Plug,
+  Workflow,
+  LayoutTemplate,
+}
+
+export function getSkillIcon(name: string): LucideIcon | undefined {
+  return iconMap[name]
+}
